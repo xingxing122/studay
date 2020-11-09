@@ -37,6 +37,7 @@ func main(){
 	fmt.Println(len(names))
 	//长度，切片中已经存在元素的数量
 
+	//遍历
 	for i := 0;i<len(names);i++{
 		fmt.Println(i,names[i])
 	}
@@ -45,9 +46,13 @@ func main(){
 		fmt.Println(i,v)
 	}
 
-	//添加元素
+	//添加元素,添加到切片末尾
 	names = append(names,"测试添加")
 	fmt.Println(names)
+	names = append(names,"添加成功")
+	fmt.Println(names)
+
+
 
 	//删除元素
 	//切片操作
@@ -64,10 +69,21 @@ func main(){
      //删除中间的元素
      nums :=[]int{0,1,2,3,4,5}
      //删除3
-     nums2 :=[]int{10,11,12,13,14,15,16,17}
+     nums2 :=[]int{10,11,12,13,14,15,16}
      copy(nums,nums2)
      fmt.Println(nums,nums2)
      //nums[0:3],nums[4:5]
+
+     //nums2 多
+     copy(nums,nums2)
+     fmt.Println(nums,nums2)
+     //nums[0:3],nums[4:5]
+     copy(nums[3:len(nums)],nums[4:len(nums)])
+     fmt.Println(nums)
+
+
+
+
 
 
 
