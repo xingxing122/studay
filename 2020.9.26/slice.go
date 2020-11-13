@@ -49,6 +49,10 @@ func main(){
 	names = append(names,"测试添加")
 	fmt.Println(names)
 
+	names = append(names,"继续添加")
+	fmt.Println(names)
+
+
 	//删除元素
 	//切片操作
 	//names[start:end] names 中从start开始到end-1 所有元素组成的切片
@@ -62,12 +66,16 @@ func main(){
 	fmt.Printf("%q\n",names)
 
      //删除中间的元素
-     nums :=[]int{0,1,2,3,4,5}
+     nums :=[]int{0,1,2,3,4,5,6,7,8,9}
      //删除3
      nums2 :=[]int{10,11,12,13,14,15,16,17}
      copy(nums,nums2)
      fmt.Println(nums,nums2)
      //nums[0:3],nums[4:5]
+
+
+
+
 
 
 
