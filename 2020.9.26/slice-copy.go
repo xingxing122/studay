@@ -4,10 +4,12 @@ import "fmt"
 
 func main() {
 	nums := []int{1, 2, 3, 4, 5}
-	fmt.Println(len(nums), cap(nums))
-	nums = append(nums, 6)
-	fmt.Println(len(nums), cap(nums))
-	nums = append(nums, 7)
-	fmt.Println(len(nums), cap(nums))
+	nums2 := nums[1:3]
+
+	nums = append(nums, 1000)
+	nums2 = append(nums2, 100)
+
+	fmt.Println(nums2)
+	fmt.Println(nums)
 
 }
