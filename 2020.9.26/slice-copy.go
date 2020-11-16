@@ -11,5 +11,7 @@ func main() {
 
 	fmt.Println(nums2)
 	fmt.Println(nums)
+	fmt.Println(cap(nums2))
+    fmt.Println(cap(nums))
 
 }
