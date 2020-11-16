@@ -17,6 +17,7 @@ func main(){
 
 	nums3 := nums2
 	nums3 = append(nums3,3)
+	fmt.Println(nums2,nums3)
 	nums2 = append(nums2,4)
 	fmt.Println(nums3)
 	fmt.Println(nums2)
