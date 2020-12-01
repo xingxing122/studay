@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"unicode/utf8"
 )
 func main() {
@@ -26,5 +27,19 @@ func main() {
 		fmt.Printf("%d，%q\n",i,v)
 	}
      fmt.Println(utf8.RuneCountInString(txt))
+
+	//转换 字符串=> byte
+	fmt.Println([]byte(desc))
+	fmt.Println(string([]byte(desc)))
+
+	// 字符串<=> int
+	i, err  := strconv.Atoi("-15")
+	fmt.Println(i,err)
+	// 字符串<=> bool
+
+
+
+
+
 
 }
