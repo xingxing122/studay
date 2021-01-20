@@ -3,31 +3,26 @@ package main
 import "fmt"
 
 func main() {
-	name :=[]string{
-		"小明",
-		"小黑",
-		"小红",
-		"大黄",
-		"大黄",
-		"小明",
-		"小黑",
-		"小红",
-		"大黄",
+
+    name := []string {
+    	"小狗",
+    	"二蛋",
+    	"狗蛋",
+    	"二蛋",
+    	"狗蛋",
+    	"狗蛋",
 	}
 
-	stat  := map[string]int{}
-	for _,name := range name {
-		v, ok :=stat[name]
+	con := make(map[string]int)
+
+	for _, stat := range name {
+		v ,ok := con[stat]
 		if !ok {
-			stat[name] = 1
-		} else {
-			stat[name] = v+1
+			con[stat] =1
+		} else{
+			con[stat] = v +1
 		}
 	}
-	fmt.Println(stat)
-
-
-
-
+fmt.Println(con)
 
 }

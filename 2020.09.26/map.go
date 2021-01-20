@@ -1,45 +1,51 @@
-package main
+package  main
 
 import "fmt"
 
-func main() {
+func main(){
 	// 字面量初始化
-	var  name map[string]string= map[string]string{"Go999":"开始"}
-	//var name  map[string]string
+	var name map[string]string = map[string]string{"go3037":"李雄"}
+
+	//map[keytype]valuetype{k:v1,k:v2}
+
+
 	fmt.Printf("%T %v\n",name,name)
-
-	//访问元素
-	fmt.Printf("%q\n",name["Go888"])
-
-	//添加元素
-	name["Go888"] = "学习go"
+	name["Go3038"] ="王星星"
 	fmt.Println(name)
-    //修改元素
-    name["Go999"]="努力"
-    fmt.Println(name)
 
-    //删除元素
-    delete(name,"Go888")
-    fmt.Println(name)
+	v, ok := name["Go0001"]
+	fmt.Println(v,ok)
 
-    //遍历
+	v, ok = name["Go3038"]
+	fmt.Println(v,ok)
 
-    for k := range name {
-    	fmt.Println(name[k])
+	delete(name,"Go3038")
+	fmt.Println(name)
+
+	fmt.Println("_____________________")
+
+	for k := range name {
+		fmt.Println(k,name[k])
 	}
 
-	for   k,v :=range name{
-		fmt.Println(k,v)
-	}
-
-	var  scores = make(map[string]int)
-	scores["Go3028"] = 90
-
-	for k,v :=range  scores{
-		fmt.Println(k,v)
-
+	for v ,k := range  name {
+		fmt.Println(v,k)
 	}
 
 
+	var score = make(map[string]int)
+	score["01"] = 90
+	score["02"] = 80
+	score["03"] = 87
+	score["04"] = 79
+	score["05"] = 78
+	score["06"] = 76
+	score["07"] = 75
+	score["08"] = 60
+	fmt.Println(score)
+
+	for v,k := range score{
+		fmt.Println(v,k)
+	}
 
 }

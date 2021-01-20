@@ -14,9 +14,9 @@ func main() {
 	for  _,k := range  name {
          s := string(k)
          if  s >= "a" && s <= "z" || s >= "A" && s <= "Z"{
-         	fmt.Println(s)
+			 tj[s]++
 		 }
-		  tj[s]++
+
 	}
      fmt.Println(tj)
 }
