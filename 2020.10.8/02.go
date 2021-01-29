@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main() {
-
-	for  _, x := range []float64{-.258,7194.84,-6070}
-	fmt.Printf(x)
-
+func main(){
+	s := []string {"A","B","C","D","E","F","G"}
+	for _, v := range  s {
+		fmt.Println(v)
+	}
 }
