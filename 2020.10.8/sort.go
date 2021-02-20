@@ -12,16 +12,12 @@ func bubble(nums []int){
       }
       fmt.Println(nums)
 
-
-
-
 }
 
 func main() {
       nums :=[]int{5,4,3,2}
+      fmt.Println(nums)
       nums =[]int{100,90,88,70,1000,100001}
       bubble(nums)
-
-
 
 }
