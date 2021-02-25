@@ -1,45 +1,28 @@
 package main
 
-import (
-	"fmt"
-	"math/rand"
-	"strings"
-	"time"
-)
+import "fmt"
 
-func   sayHi(){
-	fmt.Println("hi")
+func  add(a, b int) int{
+	return  a + b
 }
 
-
-func sayhello(){
-	fmt.Println("Hello")
-}
-
-func  genFunc() func(){
-	  if rand.Int()%2 == 0{
-	  	return  sayHi
-	  }
-	  return  sayhello
-}
-
-func aFields(split rune) bool{
-	if split == 'a' {
-		return  true
-	}
-	return  false
+func  mul(a,b int) int{
+	return  a * b
 }
 
 
 
 func  main(){
-      rand.Seed(time.Now().Unix())
-      f := genFunc()
-      f()
-      fmt.Printf("%q\n",strings.FieldsFunc("abcdefabcabc",aFields))
+	var f  func(int, int) int = add
+	var  fs []func(int,int)int
+	fs = append(fs,add,mul)
+
+	c := f(2,3)
+	fmt.Println(c)
+    for _,f :=range fs {
+    	fmt.Println(f(2,3))
+	}
 
 
 }
-
-
 
