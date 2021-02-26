@@ -1,13 +1,23 @@
 package main
 
+import "fmt"
+
+func  test(stop bool){
+	fmt.Println("A")
+	if  stop {
+		fmt.Println("B")
+		return
+	}
+	fmt.Println("C")
+}
+
+
+
 
 func main() {
-     //值传递，引用传递
-	 //值类型
-	 //引用类型
-
-
-
+    test(true)
+    fmt.Println("————————————————")
+    test(false)
 
 
 }
