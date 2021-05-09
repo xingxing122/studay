@@ -7,6 +7,8 @@
    联系方式
    通信地址
 
+user :=[]map[string]string{}
+
 
 4个go程序，每一个程序一个功能，
  1. 增加
@@ -15,6 +17,11 @@
      放入到users 中
      fmt.Println(user)
      生成ID =>> 查找user 中最大的ID+1
+
+
+
+
+
  2. 删除函数
      del 函数
      从命令行输入要删除的用户ID
