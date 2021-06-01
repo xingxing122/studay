@@ -34,6 +34,13 @@ func main() {
                 fmt.Println(i,v)
         }
 
+       var mms = [...][2]int{
+               1: [2]int{1,2},
+               2: [2]int{3,4},
+               3: [2]int{5,6},
 
+       }
+       fmt.Printf("%T\n",mms)
+       fmt.Println(mms)
 
 }
