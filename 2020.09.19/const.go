@@ -1,16 +1,20 @@
-package main
+package  main
 
-import  "fmt"
+import "fmt"
 
-// 定义常量(需要初始化值)
-const     statusNew  int  = 1
-const   statusDeleted  int  =  2
-func main() {
-      const  (
-      	Monday = 10
-      	Tuesday
-	  )
-     fmt.Println(statusNew,statusDeleted)
-      fmt.Println(Monday,Tuesday)
-	
+const  statusNew  int = 1
+const  statusDeleted int = 2
+
+
+func  main () {
+	const (
+		Monday = iota * 10
+		Tuesday
+		wedesday
+	)
+
+	fmt.Println(statusNew, statusDeleted)
+	fmt.Println(Monday, Tuesday, wedesday)
+
 }
+
