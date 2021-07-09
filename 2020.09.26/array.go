@@ -1,46 +1,52 @@
-package main
+package  main
 
 import "fmt"
 
-func main() {
-        var names [55] string
-        var  scores = [...]int{1:99}
+func main(){
 
-        fmt.Printf("%T\n", names)
-        fmt.Printf("%T\n",scores)
+     var  names [55]string
 
-        fmt.Println(names,scores)
+     var scores[2] int = [...]int {1:88}
+     fmt.Printf("%T\n",names)
+     fmt.Printf("%T\n",scores)
 
-        var nums [2]int=[...]int{100,88}
-        //零值
-        fmt.Println(nums == scores)
-        fmt.Println(nums[0])
-        fmt.Println(nums[1])
+     fmt.Printf("%q\n",names)
 
-        nums[0]= 100
-        nums[1]=101
-        fmt.Println(nums)
-        fmt.Println(len(nums))
+     fmt.Println(names,scores)
 
-        for i:=0; i< len(nums); i++ {
-                fmt.Println(i,nums[i])
-        }
+     var  user [3]string = [3] string {"kk","蜗牛","abc"}
+     bounds := [...]int{10,20,30,40,50}
+     teachers := [5]string{"abcd"}
+     nums := [10] int {1:10,3:30,5:50,8:80}
 
-        for v := range  nums {
-                fmt.Println(v,nums[v])
-        }
+     fmt.Printf("%q\n",user)
+     fmt.Println(bounds)
+     fmt.Printf("%q\n",teachers)
+     fmt.Println(nums)
+     fmt.Println(nums[0])
+     fmt.Println(nums[1])
+     fmt.Println(nums[2])
 
-        for i,v := range  nums{
-                fmt.Println(i,v)
-        }
+     fmt.Println(len(nums))
 
-       var mms = [...][2]int{
-               1: [2]int{1,2},
-               2: [2]int{3,4},
-               3: [2]int{5,6},
 
+
+     for  i :=0; i < len(nums) ; i ++ {
+             fmt.Println(i,nums[i])
+     }
+
+       for   v := range  nums {
+               fmt.Println(v)
        }
-       fmt.Printf("%T\n",mms)
-       fmt.Println(mms)
+
+       for  i,v := range  nums {
+               fmt.Println(i,v)
+       }
+
+
+       var  ms [3][2]int
+       fmt.Println(ms)
+
+
 
 }
