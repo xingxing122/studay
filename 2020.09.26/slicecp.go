@@ -6,15 +6,33 @@ func main() {
 
 	nums :=[]int{1,2,3,4,5}
 	nums2 := nums[1:3]
-	//nums2[0] = 100
-	//fmt.Println(nums2)
-	//fmt.Println(nums)
 
-	fmt.Println(nums)
-	//copy(nums[3:len(nums)],nums[4:len(nums)])
+	fmt.Println(nums,nums2)
+	fmt.Printf("%T\n",nums2)
 
-	//fmt.Println(nums[0:len(nums)-1])
+	fmt.Println(nums2)
+	fmt.Println(cap(nums2),len(nums2))
+
+	nums = append(nums,6)
+	nums = append(nums,7)
+	nums = append(nums,8)
+	nums = append(nums,9)
+	fmt.Println(cap(nums),cap(nums))
+	nums = append(nums,10)
+	fmt.Println(cap(nums),cap(nums))
+	nums = append(nums,10)
+	fmt.Println(cap(nums),cap(nums))
+
+	nums = append(nums,10)
+	fmt.Println(cap(nums),cap(nums))
 
 
 
+
+	nums = append(nums,10)
+	fmt.Println(cap(nums),cap(nums))
+	nums = append(nums,10)
+	fmt.Println(cap(nums),cap(nums))
+	nums = append(nums,10)
+	fmt.Println(cap(nums),cap(nums))
 }

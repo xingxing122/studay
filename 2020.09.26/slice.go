@@ -24,23 +24,14 @@ func main() {
     fmt.Printf("%q\n",names)
     // 删除中间元素
     nums := []int{0,1,2,3,4,5}
-    nums2 :=[]int{10,11,12,13,14,16,17,19}
+    nums2 :=[]int{10,11,12,13,14}
 
     copy(nums,nums2)
     fmt.Println(nums,nums2)
-    //nums[0:3],nums[4:5]
-     copy(nums[3:len(nums)],nums[4:len(nums)])
+
+    copy (nums[3:len(nums)],nums[4:len(nums)])
+
     fmt.Println(nums)
-    nums = append(nums,6)
-    fmt.Println(len(nums),cap(nums))
-
-    nums = append(nums,7)
-    fmt.Println(len(nums),cap(nums))
-
-
-
-
-
 
 
 
