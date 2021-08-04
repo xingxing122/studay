@@ -1,19 +1,22 @@
 package main
 
-// 函数类型
-//  func
-func  print(formatter  func (string) string,  args ... string ){
+import "fmt"
 
+func  print(formatter func (string) string,args ... string ){
+	for  i ,v := range args {
+		fmt.Println(i,formatter(v))
+	}
 }
-
-func line (txt  string, end  string) string {
+func star(txt string) string{
 	return  "*" + txt + "*"
 }
 
-func
+func line(txt string, end string)string{
+	return  txt + end
+}
 
-
-func main(){
-
-
+func  main() {
+	names := []string{"中国", "cc", "zz"}
+	print(star,names...)
+	//print(line,names...)
 }

@@ -1,18 +1,16 @@
-package main
+package  main
 
 import "fmt"
 
-func  test ()  (i int) {
 
-	defer func(){
-		fmt.Println("defer")
-		i = 2
+func main(){
+	fmt.Println("start")
+
+ 	defer func(){
+		fmt.Println("defer1")
 	}()
-	return i
+	defer func(){
+		fmt.Println("defer2")
+	}()
+	fmt.Println("end")
 }
-
-func  main(){
-	fmt.Println(test())
-
-}
-

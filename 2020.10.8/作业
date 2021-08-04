@@ -17,9 +17,7 @@ user :=[]map[string]string{}
      放入到users 中
      fmt.Println(user)
      生成ID =>> 查找user 中最大的ID+1
-
-
-
+     users := []map[string]string{ }
 
 
  2. 删除函数

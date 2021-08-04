@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"kubernetes/pkg/kubelet/kubeletconfig/util/log"
+	"log"
 	"strconv"
 )
 
