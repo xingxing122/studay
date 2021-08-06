@@ -20,7 +20,7 @@ func main() {
         fmt.Scan(&op)
         fmt.Println("请输入指令")
     }
-    
+
 
 
 }
