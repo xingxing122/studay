@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-study/2020.10.17/math"
+	"go-study/2020.10.17/gopath/src/testpkg/math"
 )
 
 
