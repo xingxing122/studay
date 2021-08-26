@@ -6,7 +6,7 @@ import (
 )
 
 func main(){
-	fmt.Println(os.Args)
+	fmt.Println("%q\n",os.Args)
 }
 
 
