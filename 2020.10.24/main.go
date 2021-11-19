@@ -4,6 +4,9 @@ import  "fmt"
 
 // 现有的数据类型
 type  Counter int
+type  User map[string]string
+
+type  Callbacks   func() error
 
 func main() {
 	var counter Counter
@@ -15,7 +18,18 @@ func main() {
 
 	fmt.Printf("%T, %v\n",c2,c2)
 
-   // var  user  User
-	// fmt.Printf("%T,%v\n",user,user)
+    var  user  User = make(User)
+	fmt.Printf("%T,%v\n",user,user)
+	user["id"] = "1"
+	fmt.Println(user)
+
+	callbacks  := map[string]Callbacks{}
+
+	callbacks["add"] = func() error {
+		fmt.Println("add")
+		return nil
+	}
+	callbacks["add"]()
+
 
 }
