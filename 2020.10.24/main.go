@@ -8,6 +8,9 @@ type  User map[string]string
 
 type  Callbacks   func() error
 
+
+type  Counter2   Counter
+
 func main() {
 	var counter Counter
 	fmt.Printf("%T,%v\n", counter,counter)
@@ -30,6 +33,10 @@ func main() {
 		return nil
 	}
 	callbacks["add"]()
+
+
+	var   v22 Counter2
+	fmt.Printf("%T %v\n",v22,v22)
 
 
 }
