@@ -14,8 +14,8 @@ type  User  struct{
 
 }
 
-func   New(id int,name,addr,tel string,birthday time.Time) User {
-	 return User{id,name,addr,tel,birthday}
+func   NewUser(id int,name,addr,tel string,birthday time.Time) User {
+	 return &User{id,name,addr,tel,birthday}
 }
 
 func main() {
@@ -29,10 +29,13 @@ func main() {
 	fmt.Printf("%T,%#v\n",u2,u2)
 
 	// 属性访问
-
 	fmt.Print(u2.name)
 	u2.name = "kk"
 	u2.id = 100
 	fmt.Printf("%T , %#v\n",u2,u2 )
+
+	u3 := NewUser(1,"kk","","",time.Now())
+	fmt.Printf("%T, %#v\n", u3,u3)
+
 
 }
