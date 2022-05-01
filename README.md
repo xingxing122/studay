@@ -1,1 +1,2 @@
 # go-studay
+# python-studay  
