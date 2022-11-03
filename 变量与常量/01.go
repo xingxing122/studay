@@ -1,18 +1,19 @@
 package main 
 
+
 import "fmt"
-//
-/* 全局变量*/
-var name string = "xingxing"
+
+var  name  string  = "aa"
+
 func main(){
 
-var (
-age int =31 
-weight int = 170
-) 
+  fmt.Println(name)
+ var (
 
-height, weight := 179, 199 
+	age int = 33 
+	weight = 170 
+ )
 
-fmt.Println(name,age,weight,height)
+fmt.Println(age,weight)
 
 }
