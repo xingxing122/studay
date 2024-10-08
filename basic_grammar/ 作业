@@ -12,5 +12,23 @@
 
    生成随机数
 
+          import (
+               "math/rand"
+               "time"
+          )
+
+        func main(){
+            rand.Seed(time.Now().Unix())
+            for i :=0; i< 10;i++ {
+               fmt.Println(rand.Intn(100))
+               }
+            }
+3. 
+
+
+
+
+
+
 
 3.
