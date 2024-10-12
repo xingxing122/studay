@@ -21,4 +21,5 @@ func main() {
 	var n6 int64 = int64(n5) + 30
 	fmt.Println(n5)
 	fmt.Println(n6)
+	
 }
