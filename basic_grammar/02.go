@@ -2,24 +2,29 @@ package main
 
 import "fmt"
 
+func getUserinfo() (string, int) {
+
+	return "zhangsan", 10
+}
+
 func main() {
 
-	var n1 int = 100
-	fmt.Println(n1)
+	var username string
+	var age = 20
+	var sex = "男"
+	fmt.Println(username, age, sex)
 
-	var n2 float32 = float32(n1)
-	fmt.Println(n2)
-	//注意，N1 的类型还是int 类型，只是将N1的值100 转为了float32而已，N1 还是int 类型
+	var a1, a2 string
 
-	fmt.Printf("%T", n1)
+	a1 = "aaaa"
+	a2 = "123"
+	fmt.Println(a1, a2)
 
-	var n3 int64 = 88888
-	var n4 int8 = int8(n3)
-	fmt.Println(n4)
+	a, b, c := 12, 13, "c"
+	fmt.Println(a, b, c)
+	fmt.Printf("a类型: %T b类型:%T c类型：%T", a, b, c)
 
-	var n5 int32 = 12
-	var n6 int64 = int64(n5) + 30
-	fmt.Println(n5)
-	fmt.Println(n6)
-	
+	var _, ag = getUserinfo()
+
+	fmt.Println(ag)
 }

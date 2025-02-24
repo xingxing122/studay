@@ -3,18 +3,14 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Println("你好，golang")
 
-	var s1 string = "你好拥抱go"
-	fmt.Println(s1)
+	var a int = 10
+	var b int = 3
+	var c int = 5
 
-	var a int
-	var b float32
-	var c float64
-	var e string
+	fmt.Println("a=%v b=%v  c=%v", a, b, c)
 
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
-	fmt.Println(e)
+	fmt.Printf("a=%v a的类型是%T", a, a)
 
 }
