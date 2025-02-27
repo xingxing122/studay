@@ -20,4 +20,12 @@ func main() {
 		fmt.Println("true")
 	}
 
+	var f1 = false
+
+	if f1 {
+		fmt.Println("true")
+	} else {
+		fmt.Printf("false")
+	}
+
 }
